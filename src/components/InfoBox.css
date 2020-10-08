@@ -1,0 +1,24 @@
+.infoBox {
+  flex: 0.3;
+  background-color: #22333b;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.infoBox > h3 {
+  padding: 10px;
+  border-bottom: 2px solid grey;
+}
+.infoBox > h4 {
+  padding: 10px;
+}
+.infoBox > p {
+  padding: 10px;
+}
+
+.infoBox--selected {
+  border-top: 10px solid yellowgreen;
+}
+.infoBox--red {
+  border-color: red;
+}

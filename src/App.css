@@ -1,0 +1,57 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.app__sideMap {
+  background-color: lightgrey;
+}
+.sideMap__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sideMap__infoBoxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__sideStats {
+  display: flex;
+  flex-direction: column;
+}
+.app__sideStats > .MuiCardContent-root {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.app__graphTitle {
+  margin: 10px 0;
+}
+.app__graph {
+  flex-grow: 1;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+  .app {
+    flex-direction: column;
+  }
+  .app__sideMap {
+    background-color: lightgrey;
+    width: 100vw;
+  }
+
+  .app__sideStats {
+    width: 100vw;
+  }
+  .app__graph {
+    width: 100%;
+  }
+}
